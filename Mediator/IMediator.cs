@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MediatorUnitTests
+namespace Mediator
 {
-    internal class MyFancyMediatorClassTests
+    public interface IMediator
     {
+        public void Notify(Component sender, string eventDescription);
     }
 }

@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mediator
+namespace Design_Pattern_Command
 {
-    internal class MyFancyMediatorClass
+    public interface ICommand
     {
+        void Execute();
+        void Undo();
+        void Redo();
     }
 }
